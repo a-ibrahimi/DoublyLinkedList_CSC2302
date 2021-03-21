@@ -2,9 +2,9 @@
 #include<stdlib.h>
 
 typedef struct Node{ 
-    char name; 
-    struct Node* next; 
-		struct Node* previous;
+    	char name; 
+   	struct Node* next; 
+	struct Node* previous;
 }Node; 
 
 Node* create_and_fill(char c){
