@@ -71,14 +71,14 @@ Node* delete_node(char c, Node* head){
 int main(){
 	Node* head = create_and_fill('b');
 	head->next = create_and_fill('d');
-	head = add_node('c', head); // do not forget to update head
+	head = add_node('c', head); // inserts the element 'c' to the linked list - you can change it and dee the result of inserting [do not forget to update head]
 	Node* walker = head; // used just to traverse the linked list
 	while(walker != NULL){
 		printf("%c ", walker->name);
 		walker = walker->next;
 	}
 	printf("\n");
-	head = delete_node('d', head);
+	head = delete_node('d', head); // deletes the element 'd' to the linked list - you can change it and dee the result of inserting [do not forget to update head]
 	walker = head;
 	while(walker != NULL){
 		printf("%c ", walker->name);
